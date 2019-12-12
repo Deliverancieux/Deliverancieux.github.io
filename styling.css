@@ -1,0 +1,214 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    background-color: #252525;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+}
+.logo_img {
+    max-width: 150px;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+main{
+    padding: 10px;
+}
+.product_img{
+    margin-top: 50px;
+    max-width: 100%;
+}
+.colorpicker{
+    max-width: 100%;
+}
+.productname{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+p1{
+    font-family: 'Work Sans', sans-serif;
+}
+.buynow{
+    width: 355px;
+    height: 53px;
+    background: #252525;
+    border-radius: 26.5px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    max-width: 100%;
+    transition: background .5s;
+}
+.buynow:hover{
+    background: #8F8D8D;
+}
+.explore_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+.explore_button{
+    width: 155px;
+    height: 60px;
+    background: #252525;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    transition: background .5s;
+}
+.explore_button:hover{
+    background: #8F8D8D;
+}
+hr{
+    border: 5px solid #252525;
+}
+.video{
+    max-width: 100%;
+    max-height: 315px;
+    min-height: 225px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Telling the navigation list */
+/* to hide (max-height=0) */
+/* and center text when it shows up */
+
+.menu {
+    list-style: none;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    background-color: #252525;
+}
+
+
+/* Show burger icon to the far right */
+/* Change mouse cursor on hover from */
+/* arrow to hand with finger */
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 23px 20px;
+    position: relative;
+    user-select: none;
+}
+
+/* Make beef in burger */
+.navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+/* Make bread top and bottom */
+.navicon:before,
+.navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navicon:before {
+    top: 5px;
+}
+
+.navicon:after {
+    top: -5px;
+}
+
+/* ---- Menu Button ---- */
+/* Do not show checkbox */
+.menu-btn {
+    display: none;
+}
+
+/* Show menu when you check button */
+.menu-btn:checked ~ .menu {
+    max-height: 500px;
+}
+
+/* Animate button on click */
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* End button animation */
+@media only screen and (min-width: 750px) {
+    .menu_item {
+        float: left;
+    }
+
+    .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .navicon{
+        display: none;
+}
