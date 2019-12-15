@@ -20,6 +20,20 @@ header {
     margin-top: 7px;
     margin-left: 15px;
 }
+.nav_link{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: opacity .5s;
+}
+.nav_link:hover{
+    opacity: .7;
+}
+.menu_item{
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
 main{
     padding: 10px;
 }
@@ -85,8 +99,8 @@ p1{
 .learnmore_button{
     width: 155px;
     height: 60px;
-    background: white;
-    color: #252525;
+    background: #252525;
+    color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     transition: background .5s;
@@ -98,8 +112,8 @@ p1{
     background: #8F8D8D;
 }
 .learnmore_button:hover{
-    background: #252525;
-    color: white;
+    background: white;
+    color: #252525;
 }
 hr{
     border: 5px solid #252525;
@@ -210,6 +224,7 @@ footer{
         font-size: 40px;
         left: 80%;
     }
+    
 
 
 
@@ -331,4 +346,9 @@ footer{
     }
     .navicon{
         display: none;
+    }   
+    .nav_link{
+        font-size: 20px;
+        margin-right: 50px
+    }
 }
